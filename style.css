@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+
+    --text-color: #342b0c;
+    --bg-color: #fefbeb;
+    --inner-bg-color: #ede8d5;
+    --btn-color: #f3c30e;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+/* Reused Styling  */
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+    align-items: center
+}
+
+.container {
+
+    max-width: 85%;
+    margin: auto;
+}
+
+
+/* Navbar  */
+
+.navbar {
+    
+    justify-content: space-between;
+    height: 13vh;
+
+}
+
+.nav-list {
+    gap: 3rem;
+}
+
+.link {
+
+    color: var(--text-color);
+    font-size: .95rem;
+}
+
+.logo {
+
+    font-size: 1.3rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.fa-ice-cream {
+
+    font-size: 1.8rem;
+}
+
+.nav-icons {
+
+    justify-content: center;
+    gap: 1rem;
+}
+
+.icon {
+    background: var(--btn-color);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: .1rem solid var(--btn-color);
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.icon:hover {
+
+    background: transparent;
+}
+
+
+
