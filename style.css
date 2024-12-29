@@ -1,120 +1,233 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 :root {
-
-    --text-color: #342b0c;
-    --bg-color: #fefbeb;
-    --inner-bg-color: #ede8d5;
-    --btn-color: #f3c30e;
+  --text-color: #342b0c;
+  --bg-color: #fefbeb;
+  --inner-bg-color: #ede8d5;
+  --btn-color: #f3c30e;
 }
 
 body {
-    background: var(--bg-color);
+  background: var(--bg-color);
 }
 
 /* Reused Styling  */
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
-    object-fit: cover;
+  max-width: 100%;
+  object-fit: cover;
 }
 
+h1 {
+  font-size: 14vw;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-shadow: 5px 5px 10px rgba(50, 50, 50, 0.6);
+  font-family: "Bebas Neue", serif;
+}
+
+h2 {
+    font-size: 5vw;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    text-shadow: 5px 5px 10px rgba(50, 50, 50, 0.4);
+}
+
+span {
+
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+
 .flex {
-    display: flex;
-    align-items: center
+  display: flex;
+  align-items: center;
 }
 
 .container {
-
-    max-width: 85%;
-    margin: auto;
+  max-width: 85%;
+  margin: auto;
 }
 
+.sections {
+
+    padding-block: 8rem;
+}
 
 /* Navbar  */
 
 .navbar {
-    
-    justify-content: space-between;
-    height: 13vh;
-
+  justify-content: space-between;
+  height: 13vh;
 }
 
 .nav-list {
-    gap: 3rem;
+  gap: 3rem;
 }
 
 .link {
-
-    color: var(--text-color);
-    font-size: .95rem;
+  color: var(--text-color);
+  font-size: 0.95rem;
 }
 
 .logo {
-
-    font-size: 1.3rem;
-    color: var(--text-color);
-    text-transform: uppercase;
-    font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-
 .fa-ice-cream {
-
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .nav-icons {
-
-    justify-content: center;
-    gap: 1rem;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .icon {
-    background: var(--btn-color);
-    color: var(--text-color);
-    font-size: 1.2rem;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    border: .1rem solid var(--btn-color);
-    transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -ms-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
+  background: var(--btn-color);
+  color: var(--text-color);
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  border: 0.1rem solid var(--btn-color);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
 
 .icon:hover {
-
-    background: transparent;
+  background: transparent;
 }
 
+/* Main  */
+
+.hero {
+  min-height: 100vh;
+  background-image: url("images/almonds.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 57%;
+  padding-top: 4rem;
+}
+
+.inner-hero {
+  background: var(--inner-bg-color);
+  width: 100%;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  justify-content: center;
+  padding: 3rem 5rem;
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-center-image {
+  position: absolute;
+  left: 44%;
+  transform: translateX(-50%) rotate(33deg);
+  -webkit-transform: translateX(-50%) rotate(33deg);
+  -moz-transform: translateX(-50%) rotate(33deg);
+  -ms-transform: translateX(-50%) rotate(33deg);
+  -o-transform: translateX(-50%) rotate(33deg);
+  top: 30%;
+  width: 25vw;
+}
+
+.hero-right-image,
+.hero-left-image {
+
+    position: absolute;
+    width: 12vw;
+    top: 0;
+}
+
+.hero-right-image {
+    right: 0;
+    z-index: -1;
+}
+
+.hero-left-image {
+    left: 0;
+}
+
+/* Flavours  */
+
+.card-container {
+  gap: 4rem;
+  height:80vh;
+  align-items: flex-end;
+}
+
+.card {
+  background: var(--inner-bg-color);
+  flex: 1;
+  padding: 12rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  position: relative;
+}
+
+.card-image {
+  width: 20rem;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.card .content {
+
+  justify-content: space-between;
+}
+
+.card .content p {
+
+  color: var(--text-color);
+  font-size: 1rem;
+}
 
 
