@@ -35,6 +35,7 @@ a {
 img {
   max-width: 100%;
   object-fit: cover;
+  -webkit-user-drag: none;
 }
 
 h1 {
@@ -42,7 +43,7 @@ h1 {
   letter-spacing: 1rem;
   text-transform: uppercase;
   color: var(--text-color);
-  text-shadow: 5px 5px 10px rgba(50, 50, 50, 0.6);
+  text-shadow: 5px 5px 10px rgba(50, 50, 50, 0.4);
   font-family: "Bebas Neue", serif;
 }
 
@@ -51,7 +52,7 @@ h2 {
     letter-spacing: .1rem;
     text-transform: uppercase;
     color: var(--text-color);
-    text-shadow: 5px 5px 10px rgba(50, 50, 50, 0.4);
+    text-shadow: 5px 5px 10px rgba(50, 50, 50, 0.1);
 }
 
 span {
@@ -230,4 +231,53 @@ span {
   font-size: 1rem;
 }
 
+/* CTA  */
 
+.cta {
+  background: var(--text-color);
+  text-align: center;
+  color: var(--bg-color);
+  padding-block: 8rem;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  position: relative;
+}
+
+.cta h2 {
+
+  color: var(--bg-color);
+}
+
+.cta p {
+
+  padding-bottom: 2rem;
+}
+
+.btn { background: var(--btn-color); padding: 1rem 2.5rem; color: var(--text-color); font-size: 1.1rem; border: .1rem solid var(--btn-color); border-radius: 100vw; -webkit-border-radius: 100vw; -moz-border-radius: 100vw; -ms-border-radius: 100vw; -o-border-radius: 100vw;
+}
+
+.light-para {
+
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--bg-color);
+}
+
+.cta-right-image {
+
+  position: absolute;
+  width: 28rem;
+  bottom: -5%;
+  right: 2%;
+}
+
+.cta-left-image {
+
+  position: absolute;
+  width: 30rem;
+  bottom: -5%;
+  left: 0;
+}
