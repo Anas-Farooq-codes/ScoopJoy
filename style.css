@@ -16,6 +16,7 @@ html {
   --bg-color: #fefbeb;
   --inner-bg-color: #ede8d5;
   --btn-color: #f3c30e;
+  --span-color: #ffc74f;
 }
 
 body {
@@ -66,7 +67,9 @@ h2 {
 
 span {
   font-weight: bold;
-  color: var(--text-color);
+  font-family: "Bebas Neue";
+  color: var(--span-color);
+  text-shadow: none;
 }
 
 .flex {
@@ -231,7 +234,12 @@ span {
 
 .card .content p {
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+.flavors {
+  color: var(--text-color);
+  font-size: 2rem;
 }
 
 /* CTA  */
@@ -315,4 +323,46 @@ span {
 .cta-2 .container {
 
   align-items: flex-end;
+}
+
+/* Commitment  */
+
+.commitment {
+
+  text-align: center;
+  background-image: url("images/leaves.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.commitment .container img {
+
+width: 40rem;
+}
+
+.commitment .container p {
+  max-width: 650px;
+  margin: auto;
+}
+
+footer {
+
+  background: var(--text-color);
+  text-align: center;
+  padding-block: 2rem;
+  margin-top: 3rem;
+}
+
+
+footer a{
+
+  color: var(--span-color);
+}
+
+footer span {
+
+  color: var(--bg-color);
+  font-family: Poppins;
+  font-weight: 400;
 }
