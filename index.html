@@ -75,12 +75,19 @@
       <section class="hero">
         <div class="inner-hero container flex">
           <div class="hero-right-image">
-            <img src="images/strawberry.png" alt="strawberry" />
+            <img src="images/vanilla.png" alt="strawberry" />
+          </div>
+
+          <div class="hero-right-down-image">
+            <img src="images/vanilla.png" alt="strawberry" />
           </div>
           <h1>Milky Scoops</h1>
 
           <div class="hero-left-image">
             <img src="images/strawberry scoop.png" alt="strawberry-scoop" />
+          </div>
+          <div class="hero-left-down-image">
+            <img src="images/Chocolate.png" alt="strawberry" />
           </div>
         </div>
         <div class="hero-center-image">
@@ -90,7 +97,7 @@
 
       <!-- Flavours  -->
 
-      <section class="sections">
+      <section class="sections" id="s1">
         <div class="container">
           <h2>Choose Your <span>Flavour</span></h2>
           <div class="card-container flex">
@@ -101,7 +108,7 @@
 
               <div class="content flex">
                 <div>
-                  <p>Pistachio Ice cream</p>
+                  <p>Pistachio</p>
                   <span class="flavors">$3.99</span>
                 </div>
                 <a href="" class="icon">
@@ -115,8 +122,8 @@
 
               <div class="content flex">
                 <div>
-                  <p>Pistachio Ice cream</p>
-                  <span class="flavors">$3.99</span>
+                  <p>Strawberry Cheesecake</p>
+                  <span class="flavors">$5.99</span>
                 </div>
                 <a href="" class="icon">
                   <i class="fa-solid fa-shopping-bag"></i>
@@ -126,12 +133,12 @@
 
             <div class="card">
               <div class="card-image">
-                <img src="images/strawberry icecream.png" alt="strawberry" />
+                <img src="images/chocolate icecream.png" alt="strawberry" />
               </div>
 
               <div class="content flex">
                 <div>
-                  <p>Strawberry Ice cream</p>
+                  <p>Chocolate</p>
                   <span class="flavors">$3.99</span>
                 </div>
                 <a href="" class="icon">
@@ -145,7 +152,7 @@
 
       <!-- CTA  -->
 
-      <section class="sections">
+      <section class="sections" id="s2">
 
         <div class="cta container">
           <div class="cta-right-image">
@@ -161,7 +168,7 @@
         </div>
       </section>
 
-      <section class=" sections">
+      <section class=" sections" id="s3">
 
 <div class="cta-2">
   <div class="container flex">
@@ -201,9 +208,13 @@
     </footer>
   </body>
   
-  <script src="main.js"></script>
 
 <!-- Script  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+
 
 <script>
   document.getElementById('current-year').textContent = new Date().getFullYear();
