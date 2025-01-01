@@ -34,7 +34,7 @@ window.addEventListener('load', function() {
 var tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#s1",
-      start: "0% 65%",
+      start: "20% 65%",
       end: "80% 50%",
       scrub: true,
     
@@ -78,7 +78,7 @@ var tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#s3",
       start: "20% 65%",
-      end: "40% 50%",
+      end: "80% 50%",
       scrub: true,
     }
   });
