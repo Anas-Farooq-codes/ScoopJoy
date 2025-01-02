@@ -437,6 +437,10 @@ z-index: 1;
 /* CTA-2  */
 
 
+.content span {
+  text-shadow: none;
+}
+
 .cta-2 {
   background: var(--inner-bg-color);
   padding-top: 5rem;
