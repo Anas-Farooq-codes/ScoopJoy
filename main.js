@@ -32,68 +32,54 @@ window.addEventListener('load', function() {
 // GSAP 
 
 var tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#s1",
-      start: "20% 65%",
-      end: "80% 50%",
-      scrub: true,
-    
-    }
-  });
+  scrollTrigger: {
+    trigger: "#s1",
+    start: "20% 65%",
+    end: "80% 50%",
+    scrub: true,
+  }
+});
 
-  tl.to(".hero-center-image", {
-    top: "158%",
-    left: "50%",
-    rotate: "0",
-    width: "12vw",
+tl.to(".hero-center-image", {
+  top: "151.3%",
+  left: "50%",
+  rotate: "0",
+  width: "13.8vw",
+  height: "auto",
+  ease: "power2.inOut",
+});
 
-  })
+var tl1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#s2",
+    start: "30% 65%",
+    end: "80% 50%",
+    scrub: true,
+  }
+});
 
-  var tl1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#s2",
-      start: "0% 65%",
-      end: "80% 50%",
-      scrub: true,
-    }
-  });
+tl1.to(".hero-center-image", {
+  top: "258%",
+  left: "20.2%",
+  rotate: "0",
+  width: "9vw",
+  height: "auto",
+  ease: "power1.inOut",
+});
 
-  tl.to(".hero-center-image", {
-    top: "158%",
-    left: "50%",
-    rotate: "0",
-    width: "12vw",
+var tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#s3",
+    start: "20% 65%",
+    end: "80% 50%",
+    scrub: true,
+  }
+});
 
-  })
-
-  tl1.to(".hero-center-image", {
-    top: "260.5%",
-    left: "20.2%",
-    rotate: "0",
-    width: "8vw",
-
-  })
-
-  var tl2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#s3",
-      start: "20% 65%",
-      end: "80% 50%",
-      scrub: true,
-    }
-  });
-
-  tl.to(".hero-center-image", {
-    top: "160%",
-    left: "50%",
-    width: "12vw",
-
-  })
-
-  tl2.to(".hero-center-image", {
-    top: "331.3%",
-    left: "29%",
-    rotate: "-55deg",
-    width: "17vw",
-
-  })
+tl2.to(".hero-center-image", {
+  top: "331.3%",
+  left: "29%",
+  rotate: "-55deg",
+  width: "17vw",
+  ease: "power1.inOut",
+});

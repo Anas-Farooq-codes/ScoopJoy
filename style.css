@@ -75,7 +75,6 @@ h1 {
   letter-spacing: 1rem;
   text-transform: uppercase;
   color: var(--text-color);
-  text-shadow: 5px 5px 10px rgba(50, 50, 50, 0.3);
   font-family: "Bebas Neue", serif;
 }
 
@@ -84,7 +83,6 @@ h2 {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: var(--text-color);
-  text-shadow: 5px 5px 10px rgba(50, 50, 50, 0.2);
   font-family: "Bebas Neue", serif;
 }
 
@@ -92,7 +90,6 @@ span {
   font-weight: bold;
   font-family: "Bebas Neue";
   color: var(--span-color);
-  text-shadow: 5px 5px 10px rgba(50, 50, 50, 0.1);
 }
 
 .flex {
