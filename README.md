@@ -4,7 +4,7 @@ Welcome to **ScoopJoy**, a delightful ice cream website designed to satisfy your
 
 This website is created using  **HTML**, **CSS**, **JavaScript**, and **GSAP** for smooth, scroll-trigger animations that bring the page to life.
 
-![ScoopJoy Image]()
+![ScoopJoy Image](https://raw.githubusercontent.com/Anas-Farooq-codes/ScoopJoy/refs/heads/main/scoopjoy.png)
 
 **Features**  
 
